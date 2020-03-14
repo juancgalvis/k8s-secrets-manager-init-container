@@ -1,0 +1,12 @@
+node_modules
+.idea
+.nyc_output
+coverage
+.git
+.gitignore
+.dockerignore
+.editorconfig
+.eslintrc
+Dockerfile
+src/**/*.test.js
+README.md

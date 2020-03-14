@@ -1,0 +1,48 @@
+{
+  "name": "k8s-secrets-manager-init-container",
+  "version": "1.0.0",
+  "description": "Service to load secrets into a startup container with a shared volume",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "ava",
+    "coverage": "nyc npm run test && nyc report --reporter=lcov --reporter=html"
+  },
+  "keywords": [
+    "Secrets",
+    "Manager"
+  ],
+  "author": "juancgalvis@outlook.com",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.639.0",
+    "log4js": "^6.1.2"
+  },
+  "devDependencies": {
+    "ava": "^3.5.0",
+    "eslint": "^6.8.0",
+    "eslint-config-finn": "^3.0.1",
+    "eslint-config-finn-prettier": "^3.0.2",
+    "nyc": "^15.0.0",
+    "prettier": "^1.19.1",
+    "rewire": "^5.0.0",
+    "sinon": "^9.0.1"
+  },
+  "nyc": {
+    "lines": 95,
+    "statements": 95,
+    "functions": 95,
+    "branches": 80,
+    "include": [
+      "src/*.js",
+      "src/**/*.js",
+      "src/**/**/*.js"
+    ],
+    "exclude": [
+      "src/*.test.js",
+      "src/**/*.test.js",
+      "src/**/**/*.test.js"
+    ],
+    "all": true
+  }
+}
