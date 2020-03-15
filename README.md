@@ -70,6 +70,17 @@ export PG_PORT=5432
 
 ```
 
+If the SECRET_MAP variable is not configured the output would be:
+
+```bash
+export password=password_value
+export username=username_value
+export host=host_value
+export dbname=dbname_value
+export port=5432
+
+```
+
 The above file can be loaded into environment variables in linux using
 the `source` command. (`source /credentials/db.conf`)
 
