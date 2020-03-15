@@ -1,4 +1,4 @@
-![CI](https://github.com/juancgalvis/k8s-secrets-manager-init-container/workflows/Node.js%20CI/badge.svg)
+![Build](https://github.com/juancgalvis/k8s-secrets-manager-init-container/workflows/Build/badge.svg)
 [![Coverage Status](https://coveralls.io/repos/github/juancgalvis/k8s-secrets-manager-init-container/badge.svg)](https://coveralls.io/github/juancgalvis/k8s-secrets-manager-init-container)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=juancgalvis_k8s-secrets-manager-init-container&metric=alert_status)](https://sonarcloud.io/dashboard?id=juancgalvis_k8s-secrets-manager-init-container)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=juancgalvis_k8s-secrets-manager-init-container&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=juancgalvis_k8s-secrets-manager-init-container)
