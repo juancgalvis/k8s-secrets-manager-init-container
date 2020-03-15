@@ -1,5 +1,5 @@
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/juancgalvis/k8s-secrets-manager-init-container/blob/master/LICENSE)
-![Node.js CI](https://github.com/juancgalvis/k8s-secrets-manager-init-container/workflows/Node.js%20CI/badge.svg)
+![CI](https://github.com/juancgalvis/k8s-secrets-manager-init-container/workflows/Node.js%20CI/badge.svg)
 [![Coverage Status](https://coveralls.io/repos/github/juancgalvis/k8s-secrets-manager-init-container/badge.svg)](https://coveralls.io/github/juancgalvis/k8s-secrets-manager-init-container)
 
 # k8s Secrets Manager Init Container
