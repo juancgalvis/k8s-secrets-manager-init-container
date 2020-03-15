@@ -92,12 +92,12 @@ There are general variables and each secrets provider can has own variables.
 
 #### General variables
 
-| env         | required           | default | description                                                                                        |
-|-------------|--------------------|---------|----------------------------------------------------------------------------------------------------|
-| PROVIDER    | :heavy_check_mark: | AWS     | Secrets manager provider                                                                           |
-| SECRET      | :heavy_check_mark: |         | Secret key                                                                                         |
-| EXPORT_PATH | :heavy_check_mark: |         | Shared volume absolute export file path                                                            |
-| TIMEOUT     |                    | 10000   | Timeout to obtain the secret, if the timeout is reached the container will end with System.exit(1) |
+| env         | required | default | description                                                                                        |
+|-------------|----------|---------|----------------------------------------------------------------------------------------------------|
+| PROVIDER    |    ✅    | AWS     | Secrets manager provider                                                                           |
+| SECRET      |    ✅    |         | Secret key                                                                                         |
+| EXPORT_PATH |    ✅    |         | Shared volume absolute export file path                                                            |
+| TIMEOUT     |          | 10000   | Timeout to obtain the secret, if the timeout is reached the container will end with System.exit(1) |
 
 #### AWS Provider variables
 
@@ -111,12 +111,12 @@ There are general variables and each secrets provider can has own variables.
 
 This provider is for test only
 
-| env       | required           | default | description                                                                                        |
-|-----------|--------------------|---------|----------------------------------------------------------------------------------------------------|
-| SECRET    | :heavy_check_mark: |         | In this provider this env var should,have the expected secret value, for example `{"key":"value"}` |
-| TEST_WAIT |                    | 0       | Taken time to write the secret to the environment variable file                                                        |
+| env       | required | default | description                                                                                        |
+|-----------|----------|---------|----------------------------------------------------------------------------------------------------|
+| SECRET    |    ✅    | In this provider this env var should,have the expected secret value, for example `{"key":"value"}` |
+| TEST_WAIT |          | 0       | Taken time to write the secret to the environment variable file                                                        |
 
-#Contributing
+# Contributing
 
 Contributions are always welcome, whether it's modifying source code to add new features or bug fixes or simply documenting.
 
