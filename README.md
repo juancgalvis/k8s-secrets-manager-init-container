@@ -97,7 +97,8 @@ There are general variables and each secrets provider can has own variables.
 | PROVIDER    |    ✅    | AWS     | Secrets manager provider                                                                           |
 | SECRET      |    ✅    |         | Secret key                                                                                         |
 | EXPORT_PATH |    ✅    |         | Shared volume absolute export file path                                                            |
-| TIMEOUT     |          | 10000   | Timeout to obtain the secret, if the timeout is reached the container will end with System.exit(1) |
+| TIMEOUT     |          | 10000   | Timeout to obtain the secret, if the timeout is reached the container will end with System.exit(1) | 
+| SECRET_MAP  |          |         | JSON Secret key to Secret env map                                                                  |
 
 #### AWS Provider variables
 
