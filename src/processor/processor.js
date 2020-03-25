@@ -31,7 +31,7 @@ function parseSecretObject() {
             logger.info('secret parsed from JSON');
         } catch (e) {
             logger.warn(
-                `secret is not a valid JSON, using the default model {"secret": "secret value"}`
+                `secret is not a valid JSON, using the default model {"SECRET": "secret value"}`
             );
             secretObject = { SECRET: secret };
         }
@@ -50,7 +50,7 @@ function constructEnvString(secretPropertiesMap) {
         let count = 0;
         Object.keys(secret).forEach(property => {
             const env = secretPropertiesMap[property] || property;
-            str += `export ${env}=${secret[property]}\n`;
+            str += `export "${env}=${secret[property]}"\n`;
             count++;
         });
         logger.info(

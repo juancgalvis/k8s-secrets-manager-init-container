@@ -67,22 +67,22 @@ has the following structure:
 The output of this init container will be a file like the following:
 
 ```bash
-export PG_PASSWORD=password_value
-export PG_USER=username_value
-export PG_HOST=host_value
-export PG_DATABASE=dbname_value
-export PG_PORT=5432
+export "PG_PASSWORD=password_value"
+export "PG_USER=username_value"
+export "PG_HOST=host_value"
+export "PG_DATABASE=dbname_value"
+export "PG_PORT=5432"
 
 ```
 
 If the SECRET_MAP variable is not configured the output would be:
 
 ```bash
-export password=password_value
-export username=username_value
-export host=host_value
-export dbname=dbname_value
-export port=5432
+export "password=password_value"
+export "username=username_value"
+export "host=host_value"
+export "dbname=dbname_value"
+export "port=5432"
 
 ```
 
@@ -98,7 +98,7 @@ THIS_IS_MY_SECRET
 The environment variable file will be:
 
 ```bash
-export SECRET=THIS_IS_MY_SECRET
+export "SECRET=THIS_IS_MY_SECRET"
 
 ```
 

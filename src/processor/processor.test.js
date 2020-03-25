@@ -101,7 +101,10 @@ test('constructEnvString should return secret as export envs string', t => {
     // Act
     const result = construct(secret);
     // Assert
-    t.is(result, 'export key1=key1\nexport key2=key2\nexport key3=1000\n');
+    t.is(
+        result,
+        'export "key1=key1"\nexport "key2=key2"\nexport "key3=1000"\n'
+    );
 });
 
 test('exportToFile should return a function', t => {
