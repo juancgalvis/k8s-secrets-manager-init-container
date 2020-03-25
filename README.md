@@ -128,10 +128,10 @@ There are general variables and each secrets provider can has own variables.
 
 This provider is for test only
 
-| env       | required | default | description                                                                                        |
-|-----------|----------|---------|----------------------------------------------------------------------------------------------------|
-| SECRET    |    ✅    | In this provider this env var should,have the expected secret value, for example `{"key":"value"}` |
-| TEST_WAIT |          | 0       | Taken time to write the secret to the environment variable file                                                        |
+| env       | required | default | description                                                                                                   |
+|-----------|----------|---------|--------------------------------------------------------------------------------------------------------------|
+| SECRET    |    ✅    |         | In this provider this env var should,have the expected secret value, for example `{"key":"value"}` |
+| TEST_WAIT |          | 0       | Taken time to write the secret to the environment variable file                                               |
 
 # Contributing
 
