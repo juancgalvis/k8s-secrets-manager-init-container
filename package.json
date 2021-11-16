@@ -15,7 +15,7 @@
   "author": "juancgalvis@outlook.com",
   "license": "MIT",
   "dependencies": {
-    "aws-sdk": "^2.639.0",
+    "aws-sdk": "^2.814.0",
     "log4js": "^6.1.2"
   },
   "devDependencies": {
